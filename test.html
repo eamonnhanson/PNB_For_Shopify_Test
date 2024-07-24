@@ -1,0 +1,49 @@
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" /> Email
+Verification<link rel="stylesheet" href="test.css" />
+<!-- Email Form -->
+<form id="email-form">
+  <label for="user-email">Type je email hier in en klik op "Invoeren":</label>
+  <input
+    id="input--sections--21194190717258__footer--contactemail"
+    class="input"
+    type="email"
+    dir="ltr"
+    name="contact[email]"
+    placeholder="E-mailadres"
+    autocomplete="email"
+    enterkeyhint="send"
+    required=""
+  />
+  <button class="btn btn-primary" id="agree-btn1" type="submit">
+    Invoeren
+  </button>
+</form>
+<div id="message" style="display: none">
+  Even geduld, je informatie wordt opgehaald...
+</div>
+<div id="result" style="display: none">
+  Het Bedrijf is: <span id="bedrijf-name"></span>
+</div>
+<script src="test.js"></script>
+<span
+  style="
+    display: none;
+    position: absolute;
+    z-index: 99999999;
+    width: 80px;
+    height: 31px;
+    background-image: url('chrome-extension://ddafdejlekcmnafgnbllcfkebabhabcl/images/zshare.png');
+    background-size: 80px 31px;
+    opacity: 0.9;
+    cursor: pointer;
+    top: 0px;
+    left: 0px;
+  "
+  id="zoho_button_ext"
+></span
+><iframe
+  id="zShareTpcCheck"
+  src="chrome-extension://ddafdejlekcmnafgnbllcfkebabhabcl/html/tpc.html"
+  style="display: none"
+></iframe>
